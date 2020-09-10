@@ -2,13 +2,14 @@
 Input: a List of integers where every int except one shows up twice
 Returns: an integer
 '''
-def single_number(arr):
-    result = 0
-    for i in arr:
-        result ^= i
-    return result    
 
-    
+
+def single_number(arr):
+
+    for i in arr:
+        if arr.count(i) == 1:
+            result = i
+    return result
 
 
 if __name__ == '__main__':
